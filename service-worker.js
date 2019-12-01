@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marathon-pace-calculator/precache-manifest.f93e30d9797111ab68f986ba465022cc.js"
+  "/marathon-pace-calculator/precache-manifest.b91d182ab24ba711e0946e2ded0703ea.js"
 );
 
 self.addEventListener('message', (event) => {
