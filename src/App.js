@@ -1,5 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import Container from '@material-ui/core/Container';
@@ -64,6 +69,17 @@ function App() {
 
   return (
     <div className="App">
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h5" className={classes.title}>
+          Marathon Pace Maker
+          </Typography>
+        </Toolbar>
+      </AppBar>
+
       <Container maxWidth="sm">
         <h2>マラソンペース配分計算</h2>
         <p>何キロまでどのくらいのペースで走ったら良いの？を教えてくれます</p>
