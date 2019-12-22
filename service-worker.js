@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marathon-pace-maker/precache-manifest.51c0185f9861d28db7ba0330692f186c.js"
+  "/marathon-pace-maker/precache-manifest.b540550ef66b9732a19b09bc0f57225c.js"
 );
 
 self.addEventListener('message', (event) => {
