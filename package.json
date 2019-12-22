@@ -2,7 +2,7 @@
   "name": "marathon-pace-calculator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://palan-inc.github.io/marathon-pace-calculator/",
+  "homepage": "https://palan-inc.github.io/marathon-pace-maker/",
   "dependencies": {
     "@material-ui/core": "^4.6.0",
     "@material-ui/icons": "^4.5.1",
