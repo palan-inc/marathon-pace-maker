@@ -14,23 +14,23 @@ import './App.css';
 
 const distances = [
   {
-    value: '42.195',
+    value: 42.195,
     label: 'フルマラソン（42.195km）',
   },
   {
-    value: '30',
+    value: 30,
     label: '30km',
   },
   {
-    value: '21.0975',
+    value: 21.0975,
     label: 'ハーフマラソン（21.0975km）',
   },
   {
-    value: '10',
+    value: 10,
     label: '10km',
   },
   {
-    value: '5',
+    value: 5,
     label: '5km',
   },
 ];
@@ -56,15 +56,29 @@ const useStyles = makeStyles(theme => ({
 function App() {
 
   const classes = useStyles();
-  const [values, setValues] = React.useState({
-    distance: '',
-    hour: '',
-    minute: '',
+  const [values] = React.useState({
+    distance: 42.195,
+    hour: 4,
+    minute: 0,
+  });
+  const [paces, setPaces] = React.useState({
+    paceMinute: 5,
+    paceSecond: 41,
   });
 
-
   const handleChange = prop => event => {
-    setValues({ ...values, [prop]: event.target.value });
+    values[prop] = Number(event.target.value);
+    // 分数を計算
+    const minute = (values.hour * 60) + values.minute;
+    // 分数を距離で割り、1キロあたりの分数を計算
+    const paceMinute = (minute) / values.distance;
+    // 分数の少数以下に60をかけ秒数を計算
+    const paceSecond = (paceMinute - Math.floor(paceMinute)) * 60
+    setPaces({
+      ...paces,
+      paceMinute: Math.floor(paceMinute),
+      paceSecond: Math.floor(paceSecond),
+    });
   };
 
   return (
@@ -119,6 +133,7 @@ function App() {
                 shrink: true,
               }}
               InputProps={{
+                inputProps: { min: 0, max: 10 },
                 endAdornment: <InputAdornment position="end">h</InputAdornment>,
               }}
               margin="normal"
@@ -134,13 +149,17 @@ function App() {
                 shrink: true,
               }}
               InputProps={{
+                inputProps: { min: 0, max: 59 },
                 endAdornment: <InputAdornment position="end">m</InputAdornment>,
               }}
               margin="normal"
             />
           </div>
         </form>
-        <p>目標をクリアする為には、1kmあたり <strong>5分00秒</strong> で走る必要があります。</p>
+        <p>
+          目標をクリアする為には、1kmあたり <strong>
+          {paces.paceMinute}分{paces.paceSecond}秒</strong>
+          で走る必要があります。</p>
       </Container>
     </div>
   );
