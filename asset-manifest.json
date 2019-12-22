@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/marathon-pace-calculator/static/css/main.b100e6da.chunk.css",
-    "main.js": "/marathon-pace-calculator/static/js/main.3de2cce5.chunk.js",
-    "main.js.map": "/marathon-pace-calculator/static/js/main.3de2cce5.chunk.js.map",
-    "runtime-main.js": "/marathon-pace-calculator/static/js/runtime-main.b883e079.js",
-    "runtime-main.js.map": "/marathon-pace-calculator/static/js/runtime-main.b883e079.js.map",
-    "static/js/2.89534ce8.chunk.js": "/marathon-pace-calculator/static/js/2.89534ce8.chunk.js",
-    "static/js/2.89534ce8.chunk.js.map": "/marathon-pace-calculator/static/js/2.89534ce8.chunk.js.map",
-    "index.html": "/marathon-pace-calculator/index.html",
-    "precache-manifest.bcc9c181e39b82b38662104b7ddaedfe.js": "/marathon-pace-calculator/precache-manifest.bcc9c181e39b82b38662104b7ddaedfe.js",
-    "service-worker.js": "/marathon-pace-calculator/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/marathon-pace-calculator/static/css/main.b100e6da.chunk.css.map"
+    "main.css": "/marathon-pace-maker/static/css/main.b100e6da.chunk.css",
+    "main.js": "/marathon-pace-maker/static/js/main.6ba161a6.chunk.js",
+    "main.js.map": "/marathon-pace-maker/static/js/main.6ba161a6.chunk.js.map",
+    "runtime-main.js": "/marathon-pace-maker/static/js/runtime-main.2cafed90.js",
+    "runtime-main.js.map": "/marathon-pace-maker/static/js/runtime-main.2cafed90.js.map",
+    "static/js/2.89534ce8.chunk.js": "/marathon-pace-maker/static/js/2.89534ce8.chunk.js",
+    "static/js/2.89534ce8.chunk.js.map": "/marathon-pace-maker/static/js/2.89534ce8.chunk.js.map",
+    "index.html": "/marathon-pace-maker/index.html",
+    "precache-manifest.51c0185f9861d28db7ba0330692f186c.js": "/marathon-pace-maker/precache-manifest.51c0185f9861d28db7ba0330692f186c.js",
+    "service-worker.js": "/marathon-pace-maker/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/marathon-pace-maker/static/css/main.b100e6da.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.b883e079.js",
+    "static/js/runtime-main.2cafed90.js",
     "static/js/2.89534ce8.chunk.js",
     "static/css/main.b100e6da.chunk.css",
-    "static/js/main.3de2cce5.chunk.js"
+    "static/js/main.6ba161a6.chunk.js"
   ]
 }
