@@ -159,7 +159,8 @@ function App() {
         <p>
           目標をクリアする為には、1kmあたり <strong>
           {paces.paceMinute}分{paces.paceSecond}秒</strong>
-          で走る必要があります。</p>
+          で走る必要があります。
+        </p>
       </Container>
     </div>
   );
